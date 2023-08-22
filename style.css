@@ -330,15 +330,13 @@ li::before {
 
   .container-fluid {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    /* padding-top: 2rem; */
+    justify-content: start;
+    align-items: center;
+    padding-top: 2rem;
 
   }
 
-  .wrapperContainer {
-    margin-top: 3rem;
-  }
+
 
   .row1 {
     flex-direction: column;
