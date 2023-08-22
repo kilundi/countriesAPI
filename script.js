@@ -483,7 +483,7 @@ async function globalData() {
         // ... Continue creating and appending elements for other information
       } catch (error) {
         console.error(`An error occurred:`, error);
-        errorDiv.innerHTML = ` <span id="errorCatch">Please Enter Valid Country!</span> `;
+        errorDiv.innerHTML = ` <span id="errorCatch">ERROR! Try another country!!</span> `;
         // button.innerHTML = ` <span id="mapError"> ERROR! </span> `;
       }
     });
