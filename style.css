@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato-Black;
+  /* color: aliceblue; */
+}
+
+body {
+  background-image: url(images/unsplay.jpg);
+  background-size: cover, contain;
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, repeat;
+}
+
+.container-fluid {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.wrapperContainer {
+  background: rgba(19, 97, 67, 0.5);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(19, 97, 67, 0.25);
+  /* width: 70%; */
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* background: purple; */
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+
+.mapFrame {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+
+.countryNameMain,
+.countryNameInfo {
+  /* background: green; */
+
+  width: 100%;
+  text-align: center;
+}
+
+.flagRow {
+  /* background: green; */
+  width: 100%;
+  /* height: 50px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+
+
+.flagContainer,
+.coatOfArmContainer {
+  /* height: 100px; */
+  width: 100%;
+  /* background: #d4d8db; */
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+}
+
+.row1,
+.row2 {
+  width: 100%;
+  /* height: 200px; */
+  /* background: rgb(252, 9, 232); */
+  /* padding: 6px; */
+  display: flex;
+  /* gap: 10px; */
+  /* flex-wrap: wrap; */
+}
+
+.row1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.row2 {
+  flex-direction: column;
+  text-align: center;
+  /* background: purple; */
+  padding: 1rem;
+}
+
+.inputRow {
+  width: 100%;
+  height: auto;
+  /* background: rgb(3, 201, 236); */
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 4fr 1fr;
+  column-gap: 1rem;
+  row-gap: 5px;
+  /* border-radius: 10px; */
+
+
+}
+
+/* Example CSS for styling the button */
+button {
+  padding: 10px 20px;
+  /* background-color: #007bff; */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* .inputElement {
+  
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+} */
+
+.inputElement {
+  width: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+}
+
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+    -13px -13px 100px #ffffff;
+}
+
+.countryInfoContainer {
+  width: 100%;
+  height: 50px;
+  /* background: red; */
+}
+
+span {
+  /* color: red; */
+  color: #708090;
+  font-weight: bold;
+}
+
+.error-message, #mapError, #errorCatch {
+  /* background: red; */
+  color: red;
+  padding: 2px 5px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/* .mapError {
+  color: red;
+} */
+
+.countryInfo0,
+.countryInfo {
+  max-width: 250px;
+  /* background: green; */
+  margin: 6px;
+  flex: 1;
+}
+
+.countryInfo0 {
+  display: flex;
+  align-items: stretch;
+}
+
+.countryInfo1 {
+  padding: 1rem;
+  /* background: red; */
+
+}
+
+.countryInfo {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.InfoContainer1,
+.InfoContainer2 {
+  width: 100%;
+  min-height: 100px;
+  background: blue;
+  padding: 1rem;
+}
+
+.titles {
+  /* margin-top: 8px; */
+  color: #2f4f4f;
+  text-decoration: underline;
+}
+
+.margin {
+  margin-top: 8px;
+}
+
+p {
+  /* font-weight: bold; */
+  line-height: 20px;
+}
+
+
+
+.inputRow, .flagRow, .buttonContainer, .row1, .wrapperContainer {
+  border-radius: 1rem;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.countryNameInfo, .countryNameMain, .flag,
+.coatOfArms, .flagContainer,
+.coatOfArmContainer, .row2, .countryInfo1, .InfoContainer1,
+.InfoContainer2, .error-message, button, #errorCatch {
+  background: radial-gradient(circle, white 0%, #d5d5d5 100%);
+  border-radius: 20px;
+  box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.65);
+}
+
+.flag,
+.coatOfArms {
+  border-radius: 6px;
+  height: auto;
+  max-width: 100px;
+
+}
+
+
+
+
+.buttonContainer {
+  padding: 10px;
+  width: 100%;
+  /* max-width: 50px; */
+  height: auto;
+  /* background: #007bff; */
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column;
+  gap: .7em; */
+}
+
+.languageTitle {
+  text-align: center;
+}
+
+
+ul {
+  padding: 0;
+
+  list-style-type: none;
+
+}
+
+li {
+  padding-left: 20px;
+
+  position: relative;
+
+}
+
+/* Style the bullet points */
+li::before {
+  content: "•";
+
+  position: absolute;
+  left: 0;
+
+
+  top: 0.2em;
+
+}
+
+@media (max-width: 576px) {
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding-top: 2rem; */
+
+  }
+
+  ..wrapperContainer {
+    margin-top: 3rem;
+  }
+
+  .row1 {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* max-width: 400px; */
+    /* align-items: stretch; */
+  }
+
+
+
+  .flagRow {
+    flex-direction: column;
+  }
+}
