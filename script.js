@@ -46,6 +46,15 @@ async function globalData() {
     mainContainer.classList.add("container-fluid", "main");
     document.body.appendChild(mainContainer);
 
+    const titleBox = document.createElement("div");
+    titleBox.classList.add("titleBox", "main");
+    mainContainer.appendChild(titleBox);
+
+    const titleText = document.createElement("h1");
+    titleText.classList.add("titleText", "main");
+    titleText.innerHTML = `COUNTRY GUIDE`;
+    titleBox.appendChild(titleText);
+
     const wrapperContainer = document.createElement("div");
     wrapperContainer.classList.add("wrapperContainer", "main");
     mainContainer.appendChild(wrapperContainer);
@@ -76,23 +85,7 @@ async function globalData() {
     flagRow.classList.add("flagRow", "row");
     wrapperContainer.appendChild(flagRow);
 
-    /* <<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<<<<>>>>>>>>>>> */
-    /* <<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<<<<>>>>>>>>>>> */
-    /* <<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<<<<>>>>>>>>>>> */
-    /* 
-    const flagContainer = document.createElement("div");
-    flagContainer.classList.add("flagContainer", "row");
-      flagRow.appendChild(flagContainer); 
-      */
 
-    /*
-    const coatOfArmContainer = document.createElement("div");
-    coatOfArmContainer.classList.add("coatOfArmContainer", "row");
-    flagRow.appendChild(coatOfArmContainer);
- */
-    /* <<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<<<<>>>>>>>>>>> */
-    /* <<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<<<<>>>>>>>>>>> */
-    /* <<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<<<<>>>>>>>>>>> */
 
     const row2 = document.createElement("div");
 
@@ -152,10 +145,7 @@ async function globalData() {
         row2.classList.add("row2", "row");
 
         const country = await fetch(finalURL);
-        // console.log(country);
 
-        // const notCountry = await fetch(errorURL);
-        // console.log(notCountry);
 
         const countryData = await country.json();
 
