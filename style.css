@@ -342,7 +342,7 @@ li::before {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-top: 2rem;
+    padding: 2rem 0;
 
   }
 
