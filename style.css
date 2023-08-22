@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: #0c192c;
   background-image: url(images/unsplay.jpg);
   background-size: cover, contain;
   background-position: top right, bottom left;
