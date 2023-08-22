@@ -206,6 +206,7 @@ async function globalData() {
 
         // Create and append elements for country information
         const nameTilte = document.createElement("h2");
+        nameTilte.setAttribute('class', 'country-name');
         nameTilte.classList.add("nameTitle");
         nameTilte.innerHTML = `${countryData[0].name.common.toUpperCase()}`;
         countryNameMain.appendChild(nameTilte);
@@ -483,7 +484,7 @@ async function globalData() {
         // ... Continue creating and appending elements for other information
       } catch (error) {
         console.error(`An error occurred:`, error);
-        errorDiv.innerHTML = ` <span id="errorCatch">ERROR! Try another country!!</span> `;
+        errorDiv.innerHTML = ` <span id="errorCatch">Try another country!!</span> `;
         // button.innerHTML = ` <span id="mapError"> ERROR! </span> `;
       }
     });
