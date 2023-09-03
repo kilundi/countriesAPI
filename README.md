@@ -14,6 +14,9 @@ Welcome to Country Guide, a website that provides geographical, demographic, cul
 ### Landing page
 ![country api-1](https://github.com/kilundi/countriesAPI/assets/95399799/4cd79545-28fd-49e3-b5c3-4b8b38e5981b)
 
+<img src="https://github.com/kilundi/countriesAPI/assets/95399799/d92d873c-11d5-47cf-b4f0-d76b9d61a7db" width="200">
+
+
 ### Large screen Dislpay
 ![country api-2](https://github.com/kilundi/countriesAPI/assets/95399799/bf052195-f620-4ca8-abcc-5e729f74c216)
 
