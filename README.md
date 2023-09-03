@@ -21,7 +21,10 @@ Welcome to Country Guide, a website that provides geographical, demographic, cul
 ![country api-2](https://github.com/kilundi/countriesAPI/assets/95399799/bf052195-f620-4ca8-abcc-5e729f74c216)
 
 ### Small screen Display
-![country api-3](https://github.com/kilundi/countriesAPI/assets/95399799/d92d873c-11d5-47cf-b4f0-d76b9d61a7db)
+<div style="text-align:center;">
+  <img src="https://github.com/kilundi/countriesAPI/assets/95399799/d92d873c-11d5-47cf-b4f0-d76b9d61a7db" width="400">
+</div>
+
 
 
 ## How to Use
