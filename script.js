@@ -23,6 +23,8 @@ async function globalData() {
         const countryNames = data.map((country) => country.name.common);
         const countryListElement = document.getElementById("countryList");
 
+        console.log(countryNames)
+
         countryNames.forEach((name) => {
           const option = document.createElement("option");
           option.value = name;
